@@ -33,4 +33,4 @@ Drumbridge supports the following devices over USB-C MIDI:
 | EP-1320 Medieval | 1.0.3+ (multisample support; earlier versions have a known crash bug — please update) |
 | EP-40 RIDDIM | 1.0.5+ (earlier versions have known disk-access crashes during downloads) |
 
-If the app reports your firmware version is below the minimum, please update via Teenage Engineering's official [field](https://teenage.engineering/field) tool before filing a bug.
+If the app reports your firmware version is below the minimum, please update via Teenage Engineering's official [update tool](https://teenage.engineering/apps/update) before filing a bug.
