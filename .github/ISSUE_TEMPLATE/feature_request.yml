@@ -1,0 +1,39 @@
+name: Feature request
+description: Suggest a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: device
+    attributes:
+      label: Most relevant device
+      options:
+        - EP-133 K.O. II
+        - EP-1320 Medieval
+        - EP-40 RIDDIM
+        - All devices
+        - Not device-specific
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation where you wanted this. The "why" matters more than the "what".
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like the app to behave?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+    validations:
+      required: false

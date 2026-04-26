@@ -1,0 +1,90 @@
+name: Bug report
+description: Something broken, crashing, or behaving wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more detail you give here, the faster it gets fixed.
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: EP device
+      options:
+        - EP-133 K.O. II
+        - EP-1320 Medieval
+        - EP-40 RIDDIM
+        - No device (issue is in app-only flow)
+    validations:
+      required: true
+
+  - type: input
+    id: device-firmware
+    attributes:
+      label: Device firmware version
+      description: Found in the device's settings menu (e.g. "1.2.0").
+      placeholder: e.g. 1.2.0
+    validations:
+      required: false
+
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS / iPadOS version
+      placeholder: e.g. 17.5.1
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: iPhone / iPad model
+      placeholder: e.g. iPhone 15 Pro, iPad Pro 13" M4
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Drumbridge version
+      description: Visible at the bottom of the Device tab.
+      placeholder: e.g. 1.0 (1)
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What did you tap, in order?
+      placeholder: |
+        1. Open Drumbridge
+        2. Tap …
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Include any error message text or screenshots.
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (optional)
+      description: |
+        From the app's Device tab, tap "Share Diagnostics" to export an on-device MetricKit bundle (no samples or project data included). Drag the file into the box below to attach.
+    validations:
+      required: false
